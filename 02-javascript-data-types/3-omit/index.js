@@ -5,5 +5,8 @@
  * @returns {object} - returns the new object
  */
 export const omit = (obj, ...fields) => {
-
+    const keyValueArr = Object.entries(obj)
+    return Object.fromEntries(
+        keyValueArr.filter(element => fields.indexOf(element[0]) === -1)
+    )
 };
