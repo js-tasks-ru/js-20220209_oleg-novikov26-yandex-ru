@@ -1,4 +1,5 @@
 export default class ColumnChart {
+
     subElements = {};
     chartHeight = 50;
     constructor({
@@ -89,4 +90,5 @@ export default class ColumnChart {
         this.element = null;
         this.subElements = {};
     }
+
 }
