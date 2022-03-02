@@ -60,7 +60,7 @@ export default class ColumnChart {
     get template() {
 
         return `<div class="dashboard__chart_orders">
-            <div class="column-chart" style="--chart-height: 50">
+            <div class="column-chart" style="--chart-height: ${this.chartHeight}">
                 <div class="column-chart__title">
                     Total ${this.label}
                     ${this.getLinkTemplate()}
